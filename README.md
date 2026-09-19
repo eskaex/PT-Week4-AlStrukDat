@@ -56,4 +56,4 @@ Juara 10 : Bocil_Epep_Jumpshoot (Total Skor: 229 | Skor Penonton: 99)
 - Perhatikan base case rekursi (baik untuk Merge Sort maupun Quick Sort) agar tidak terjadi infinite recursion.
 - Kode difokuskan pada pemahaman pembagian masalah (Divide and Conquer), bukan sekadar output yang benar — jadi tetap wajib rekursif, bukan iteratif murni.
 - Tiket presale REQUIEM (November 2026) udah mau buka nih. Jangan sampai kehabisan atau kamu bakal dihantui penyesalan! 🎃👻
-- Pwiss follow IG & Tiktok @requiem.halloweenparty biar update sama infonya ya - THANK YOUU
+- **Pwiss follow IG & Tiktok @requiem.halloweenparty** biar update sama infonya ya - THANK YOUU
