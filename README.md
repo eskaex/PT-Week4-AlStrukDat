@@ -48,6 +48,7 @@ Juara 7 : Jett_Rebibe_Me (Total Skor: 265 | Skor Penonton: 88)
 Juara 8 : Frieren_Males_Gerak (Total Skor: 263 | Skor Penonton: 85)
 Juara 9 : Sigma_Mewing_Chad (Total Skor: 250 | Skor Penonton: 75)
 Juara 10 : Bocil_Epep_Jumpshoot (Total Skor: 229 | Skor Penonton: 99)
+```
 
 ## Catatan Tambahan
 
