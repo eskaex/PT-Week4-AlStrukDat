@@ -4,21 +4,23 @@ Malam puncak REQUIEM: Feast To The Unseen di bulan November semakin dekat! Panit
 
 Karena antusiasme yang luar biasa, data skor peserta masuk secara acak dan panitia harus mengumumkan pemenang tepat sebelum DJ Performance dimulai dalam waktu 10 menit. Bantulah panitia REQUIEM membuat sistem pengurutan menggunakan **algoritma Divide and Conquer** untuk mengurutkan peserta dari Total Skor tertinggi. Jika total skor sama, prioritaskan peserta dengan nilai "Reaksi Penonton" tertinggi!
 
+<hr>
+
 ### Tugas
 
 Buatlah program yang mengurutkan seluruh peserta Coswalk Competition berdasarkan Total Skor (Skor_Kostum + Skor_Karakter + Skor_Penonton), dari yang tertinggi ke terendah, menggunakan salah satu algoritma *Divide and Conquer*:
-- **Merge Sort**
+- **Merge Sort**, atau
 - **Quick Sort**
 
-*(Pilih salah satu saja)*
+*(Pilih salah satu — soal ini unguided, jadi tidak ada kerangka logika sorting yang diberikan; kalian yang merancang sendiri fungsi divide, conquer, dan combine-nya)*
 
 **Aturan pengurutan:**
 1. Total Skor lebih tinggi → posisi lebih atas.
-2. Jika Total Skor sama, peserta dengan Skor Reaksi Penonton lebih tinggi berhak menang.
+2. Jika Total Skor sama, peserta dengan Skor Reaksi Penonton lebih tinggi berhak menang (*tie-break*).
 
----
+<hr>
 
-### Ketentuan
+### ⚠️ Ketentuan
 
 1. **WAJIB** menggunakan Merge Sort atau Quick Sort dengan pendekatan rekursif *Divide and Conquer*. Pilih salah satu saja.
 2. **Dilarang** menggunakan fungsi bawaan seperti `sorted()`, `.sort()`, atau sejenisnya untuk melakukan pengurutan datanya.
@@ -28,18 +30,26 @@ Buatlah program yang mengurutkan seluruh peserta Coswalk Competition berdasarkan
 
 ---
 
-### Format Input
+### 🛠️ Penjelasan Parameter
 
-- Baris pertama: `N` — jumlah peserta.
-- `N` baris berikutnya, masing-masing berisi (dipisah spasi):
-  `Nama_Karakter Skor_Kostum Skor_Karakter Skor_Penonton`
-  
-*(Gunakan underscore `_` sebagai pengganti spasi pada nama karakter, misalnya `Ratu_Bayangan`)*
+Terdapat beberapa parameter yang umumnya digunakan pada fungsi-fungsi rekursif dalam program ini (tergantung algoritma yang Anda pilih):
 
-### Format Output
+1. `peserta` = Tipe data **List**, berisi kumpulan *tuple* data cosplayer `(nama, skor_kostum, skor_karakter, skor_penonton, total_skor)` yang akan diurutkan.
+2. `low` (atau `left`) = Tipe data **Integer**, menunjukkan batas awal atau indeks paling kiri dari sub-array yang sedang diproses dalam rekursi.
+3. `high` (atau `right`) = Tipe data **Integer**, menunjukkan batas akhir atau indeks paling kanan dari sub-array yang sedang diproses.
+4. `mid` = Tipe data **Integer**, menunjukkan titik tengah array (khusus jika menggunakan Merge Sort) yang digunakan untuk membagi sub-masalah.
 
-Leaderboard peserta dari Juara 1 (Total Skor tertinggi) sampai peserta terakhir, masing-masing menampilkan peringkat, nama karakter, dan total skor.
+<hr>
 
+### Test Case & Format Output
+
+```text
+===== HASIL COSWALK COMPETITION - REQUIEM: FEAST TO THE UNSEEN =====
+Juara 1 : Dewi_Kelam (Total Skor: 275 | Skor Penonton: 95)
+Juara 2 : Ratu_Bayangan (Total Skor: 265 | Skor Penonton: 90)
+Juara 3 : Ksatria_Kabut (Total Skor: 265 | Skor Penonton: 88)
+Juara 4 : Sang_Penjaga_Fajar (Total Skor: 263 | Skor Penonton: 85)
+Juara 5 : Roh_Pemburu (Total Skor: 250 | Skor Penonton: 75)
 
 print("===== HASIL COSWALK COMPETITION - REQUIEM: FEAST TO THE UNSEEN =====")
 for i, p in enumerate(hasil, start=1):
